@@ -1,5 +1,5 @@
 
-#Terraform AWS Bastion
+# Terraform AWS Bastion
 ![Topology](Topology.png)
 
 ## 생성되는 리소스
