@@ -1,0 +1,7 @@
+region = "ap-northeast-2"
+resource_prefix = "DevOS-Demo"
+vpc_cidr = "10.0.0.0/16"
+subnet_cidr = "10.0.0.0/20"
+bastion_instance_type = "t2.micro"
+web_instance_type = "t2.micro"
+bastion_key_pair_name = "devos-seoul-keypair"
