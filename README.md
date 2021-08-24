@@ -1,3 +1,4 @@
+
 #Terraform AWS Bastion
 ![Topology](Topology.png)
 
@@ -11,3 +12,6 @@
 * Nat Gateway
 * EC2 (bastion)
 * EC2 (nginx)
+
+## TODO
+* 모듈화
