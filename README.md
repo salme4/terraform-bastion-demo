@@ -12,6 +12,5 @@
 * Nat Gateway
 * EC2 (bastion)
 * EC2 (nginx)
+* Keypair
 
-## TODO
-* 모듈화
