@@ -20,11 +20,6 @@ resource "aws_route_table_association" "pub-2" {
   route_table_id = aws_route_table.bastion-pub-rt.id
 }
 
-resource "aws_route_table_association" "pub-3" {
-  subnet_id = aws_subnet.bastion-public-subnet-3.id
-  route_table_id = aws_route_table.bastion-pub-rt.id
-}
-
 resource "aws_route_table" "bastion-prv-rt" {
   vpc_id = aws_vpc.bastion-vpc.id
   route {
@@ -43,10 +38,5 @@ resource "aws_route_table_association" "prv-1" {
 
 resource "aws_route_table_association" "prv-2" {
   subnet_id = aws_subnet.bastion-private-subnet-2.id
-  route_table_id = aws_route_table.bastion-prv-rt.id
-}
-
-resource "aws_route_table_association" "prv-3" {
-  subnet_id = aws_subnet.bastion-private-subnet-3.id
   route_table_id = aws_route_table.bastion-prv-rt.id
 }

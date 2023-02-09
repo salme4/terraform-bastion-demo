@@ -3,7 +3,7 @@ resource "aws_instance" "bastion-ec2" {
   instance_type = var.bastion_instance_type
   associate_public_ip_address = true
   subnet_id = aws_subnet.bastion-public-subnet-2.id
-  key_name = var.bastion_key_pair_name
+  key_name = aws_key_pair.bastion-keypair.key_name
   vpc_security_group_ids = [aws_security_group.allow-ssh-sg.id]
 
   tags = {
